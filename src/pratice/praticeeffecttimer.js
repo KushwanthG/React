@@ -1,5 +1,6 @@
+// import useGetApiData from "./utils"
 import { useEffect, useState } from "react"
-export default function useGetApiData(url){
+function useGetApiData(url){
     
     let [product,setProducts]=useState({});
 
@@ -16,3 +17,12 @@ export default function useGetApiData(url){
     return product
    
 }
+export default function Timer() {
+  let data = useGetApiData("https://fakestoreapi.com/products/1")
+  return(
+    <>
+    <h1>Custom Hook</h1>
+    <div>{Object.keys(data)}</div>
+    <div>{data.title}</div>
+    </>
+  )  }

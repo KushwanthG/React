@@ -33,17 +33,19 @@ import SampleForm from './samplebutton';
 import Sampleuseeffect from './sampleuseeffect';
 import Sampleusereducer from './sampleusereducer';
 import MyFoodList from './UsersChoice/Myfood';
-import Pratice1 from './pratice/pratice1';
-import Pratice2 from './pratice/pratice2';
+import praticeeffect from './pratice/praticeeffect';
+import praticeref from './pratice/praticeref';
 import UseCallbackExample from './pratice/praticecall';
 import UseMemoExample from './pratice/praticememo';
-
+import Timer from './pratice/praticeeffecttimer';
+import Root from './navigate/root';
 
 
 let rot=ReactDOM.createRoot(document.getElementById('root'));
 
 rot.render(
   <ul>
+    {/* <Timer></Timer> */}
     {/* {<Timerref></Timerref>} */}
     {/* {<UseCallPar></UseCallPar>} */}
     {/* { <Provider store={store}>
@@ -65,10 +67,9 @@ rot.render(
   
       {/* <Connect/> */}
 
-  {/* <Pratice1></Pratice1> */}
-  <Pratice2></Pratice2>
-  <UseCallbackExample></UseCallbackExample>
-  <UseMemoExample></UseMemoExample>
+  
+  {/* <UseCallbackExample></UseCallbackExample>
+  <UseMemoExample></UseMemoExample> */}
 
       {/* <ButtonUsage></ButtonUsage> */}
     {/* <Calculators></Calculators> */}
@@ -92,6 +93,7 @@ rot.render(
    {/* <SampleForm></SampleForm>
    <Sampleuseeffect></Sampleuseeffect> */}
    {/* <Sampleusereducer></Sampleusereducer> */}
+   <Root></Root>
   </ul>
 )
 reportWebVitals();
