@@ -26,7 +26,6 @@ const BankingApp = () => {
         console.error(`There was a problem with the fetch operation for ${url}:`, error);
       }
     };
-
     const fetchDataAsync = async () => {
       const accountsData = await fetchData('/api/banking/balance');
       setAccounts(accountsData);
@@ -37,7 +36,6 @@ const BankingApp = () => {
       const userData = await fetchData('/users/');
       setUser(userData);
     };
-
     if (token) {
       fetchDataAsync();
     } else {

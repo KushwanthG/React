@@ -47,12 +47,11 @@ rot.render(
   <ul>
     {/* <Timer></Timer> */}
     {/* {<Timerref></Timerref>} */}
-    {/* {<UseCallPar></UseCallPar>} */}
     {/* { <Provider store={store}>
        {/* <Counter/> */}
        {/* <TodoList></TodoList>
     </Provider> */}
-    {/* <Routee></Routee>   */}
+
     {/* <MainComp></MainComp> */}
     {/* <ValidForm></ValidForm> */}
     {/* <Lazy>
@@ -82,13 +81,10 @@ rot.render(
     {/* <UseMemos></UseMemos>
     <UseCallbackFun></UseCallbackFun>
    */}
-   {/* <Routee></Routee> */}
    {/* <UserForm></UserForm> */}
    {/* {<App/>} */}
    {/* <Mainaxios/> */}
    {/* <MainApps></MainApps> */}
-   {/* <UseMemo></UseMemo>
-   <UseCallPar></UseCallPar> */}
    {/* <Movie></Movie> */}
    {/* <SampleForm></SampleForm>
    <Sampleuseeffect></Sampleuseeffect> */}

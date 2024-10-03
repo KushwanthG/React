@@ -7,6 +7,9 @@ import UseMemoExample from '../pratice/praticememo'
 import Nothing from './nothing'
 import Home from './homemain'
 import Calculators from '../Calculator/cal'
+import Praticeaxios from '../pratice/praticeaxios'
+import  {PraticeHooks}  from '../pratice/praticeHooks'
+
 
 
 
@@ -15,7 +18,7 @@ const Header=()=>{
         <nav className="navbar navbar-dark bg-primary">
           <div className="container-fluid">
             <ul className="navbar-nav d-flex flex-row">
-              <li className="nav-item me-3">
+              {/* <li className="nav-item me-3">
                 <Link className="nav-link" to="/USECALLBACK">UseCallback</Link>
               </li>
               <li className="nav-item me-3">
@@ -26,11 +29,20 @@ const Header=()=>{
               </li>
               <li className="nav-item me-3">
                 <Link className="nav-link" to="/USEREF">UseRef</Link>
+              </li> */}
+              <li className="nav-item me-3">
+                <Link className="nav-link" to="/home">HOME</Link>
+              </li>
+              <li className="nav-item me-3">
+                <Link className="nav-link" to="/hooks">Hooks</Link>
               </li>
               <li className="nav-item me-3">
                 <Link className="nav-link" to="/Calculators">Calculator</Link>
               </li>
             </ul>
+            <li className="nav-item me-3">
+                <Link className="nav-link" to="/Axios">Axios</Link>
+            </li>
           </div>
         </nav>
     )
@@ -46,12 +58,16 @@ const Root = () => {
     <Header/>
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/USECALLBACK" element={<UseCallbackExample/>}/>
-            <Route path="/USEEFFECT" element={<Pratice1/>}/>
-            <Route path="/USEMEMO" element={<UseMemoExample/>}/>
-            <Route path="/USEREF" element={<Pratice2/>}/>
+            <Route path="/home" element={<Home/>}/>
+            <Route path="/hooks" element={<PraticeHooks/>}>
+              <Route path="USEEFFECT" element={<Pratice1/>}/>
+              <Route path="USECALLBACK" element={<UseCallbackExample/>}/>  
+              <Route path="USEMEMO" element={<UseMemoExample/>}/>
+              <Route path="USEREF" element={<Pratice2/>}/>
+            </Route>
             <Route path="/*" element={<Nothing/>}/>
             <Route path='/Calculators' element={<Calculators/>}/>
+            <Route path='/Axios' element={<Praticeaxios/>}/>
 
         </Routes>
     </BrowserRouter>
